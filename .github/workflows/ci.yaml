@@ -93,4 +93,4 @@ jobs:
               sudo docker rm -f ${{ env.DOCKER_NAME }}
             fi
             # Run Docker container from the loaded image
-            sudo docker run -d --name ${{ env.DOCKER_NAME }} -p ${{ SERVICE_PORT }}:80 ${{ env.DOCKER_IMAGE }}:${{ env.DOCKER_TAG }}
+            sudo docker run -d --name ${{ env.DOCKER_NAME }} -p ${{ env.SERVICE_PORT }}:80 ${{ env.DOCKER_IMAGE }}:${{ env.DOCKER_TAG }}
